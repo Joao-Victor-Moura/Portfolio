@@ -203,39 +203,14 @@ section#habilidades p#habsobre{
 
 section#habilidades div#col img{
     display: block;
-    width: 120px;
+    width: 150px;
     margin-bottom: 2rem;
 }
 
-section#habilidades div#col2 img{
-    display: block;
-    width: 120px;
-    margin-bottom: 2rem;
-    margin-left: 22rem;
-}
 
-section#habilidades div#names{
-    font-size: 27px;
-    font-weight: 600;
-     margin-left: -17rem;
+section#habilidades div#col p{
+    font-size: 25px;
+    font-weight: 500;
     
 }
 
-section#habilidades div#names2{
-    font-size: 27px;
-    font-weight: 600;
-     margin-left: 5rem;
-    
-}
-
-section#habilidades div#names p{
-
-    margin-top: 2.5rem;
-    margin-bottom: 6.7rem;
-}
-
-section#habilidades div#names2 p{
-
-    margin-top: 2.5rem;
-    margin-bottom: 6.9rem;
-}
