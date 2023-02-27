@@ -242,7 +242,7 @@ section#habilidades div#col p{
     margin-bottom: 10px;
 }
 
-.cv .cv-item::before{
+.cv .cv-item::before{ /* a bolinha de customização do cúrriculo */
     content: "";
     position: absolute;
     top: 0;
@@ -254,3 +254,26 @@ section#habilidades div#col p{
     border-radius: 50%;
 }
 
+.carousel-control-prev{
+    margin-left: -8rem;
+}
+
+.carousel-control-next{
+     margin-right: -8rem;
+}
+
+.carousel-indicators{
+    margin-bottom: -35px;
+}
+
+@media (max-width: 1860px){
+
+    .carousel-control-prev{
+        margin-left: 0;
+    }
+    
+    .carousel-control-next{
+         margin-right: 0;
+    }
+    
+}
