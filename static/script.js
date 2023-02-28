@@ -22,3 +22,27 @@ navItem.forEach(item => {
         }
   })
 })
+
+//Animar todos os itens da tela que tiver o atributo data-anime
+
+const item = document.querySelectorAll("[data-anime]"); // pegando todos os atributos data-anime e armazanando na const item
+
+const animeScroll = () => { // função para a animação do scroll
+    const windowTop = window.pageYOffset + window.innerHeight * 0.85; //pegando o topo da página e somando uma altura para criar uma margem pra animação começar assim que scrollar
+    
+    item.forEach((element) => {
+        if (windowTop > element.offsetTop){ //element.offsetTop é a altura que esse elemento está do topo, se o topo da minha página for maior que em relação ao meu elemento para o topo...
+            element.classList.add("animate"); // ele vai receber essa classe caso a distância da tela para o topo for maior que a distância do elemento pro topo, 
+                                                // ou seja, quando chegar no elemnto vai anima-lo
+        } else {
+            element.classList.remove("animate"); //remove a animação quando subir o scroll.
+        }
+    }); 
+};
+
+animeScroll();
+
+window.addEventListener("scroll", () => { //pegando o scroll da tela e chamando uma função de callback pra animar o scroll sempre que scrollar a tela 
+    animeScroll();
+})
+
