@@ -46,3 +46,18 @@ window.addEventListener("scroll", () => { //pegando o scroll da tela e chamando 
     animeScroll();
 })
 
+//Ativar o carregamento do botão enviar do formulário de contato
+
+const btnEnviar = document.querySelector('#btn-enviar')
+const btnEnviarLoader = document.querySelector('#btn-enviar-loader')
+
+btnEnviar.addEventListener("click", () => {
+    btnEnviarLoader.style.display = "block";
+    btnEnviar.style.display  = "none";
+})
+
+//Tirar a mensagem de sucesso de envio do email após 5seg
+
+setTimeout(() => {
+    document.querySelector('#alerta').style.display = "none";
+}, 5000)

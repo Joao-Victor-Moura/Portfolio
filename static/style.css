@@ -309,3 +309,14 @@ section#habilidades div#col p{
     }
     
 }
+
+#btn-enviar-loader{
+    display: none;
+}
+
+#alerta {
+    position: fixed;
+    z-index: 10; /* profundidade maior, vai ficar acima de tudo dentro do projeto */
+    top: 30px;
+    right: 30px;
+}
