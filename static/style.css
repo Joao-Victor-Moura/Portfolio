@@ -24,11 +24,11 @@ html, body{
     display: block;
     width: 120px;
     border: 8px solid #2c2f3f;
-    /*border-radius: 50%; */ 
+    /* border-radius: 50%; */ /* Para arredondar a foto de perfil, preferi quadrado mesmo */
 }
 
 #header .profile h1{
-    font-size: 28px;
+    font-size: 24px;
     margin: 0;
     padding: 0;
     font-weight: 600;
@@ -66,7 +66,7 @@ html, body{
 
 .nav-menu a i,
 .nav-menu a:focus i {
-    font-size: 24px;
+    font-size: 20px;
     padding-right: 0.8rem;
     color: #6f7180;
 }
@@ -90,9 +90,6 @@ html, body{
     margin-left: 300px;
 }
 
-#main p{
-    font-size: 1.2rem;
-}
 
 section#inicio{
     background-image: url("./img/banner_template1.jpg");
@@ -189,10 +186,6 @@ i.menu-mobile{
 }
 
 
-/* section#sobre p{
-    font-size: 1.2rem;
-} */
-
 section#sobre h3{
     text-align: center;
 }
@@ -200,10 +193,6 @@ section#sobre h3{
 .section-bg{
     background-color: #eff5ff;
 }
-
-/* section#habilidades p#habsobre{
-    font-size: 1.2rem;
-} */
 
 section#habilidades div#col img{
     display: block;
@@ -319,4 +308,25 @@ section#habilidades div#col p{
     z-index: 10; /* profundidade maior, vai ficar acima de tudo dentro do projeto */
     top: 30px;
     right: 30px;
+}
+
+#footer{
+    padding: 15px;
+    color: #fff;
+    font-size: 13.9px;
+    position: fixed; /* a mesma do menu */
+    left: 0;
+    bottom: 0;
+    width: 300px; /* mesma largura do menu */
+    z-index: 9999; 
+    background-color: #021124; 
+    transition: .3s;
+}
+
+@media (max-width: 1012px) {
+    #footer{
+        position: static ;
+        width: auto;
+        padding: 20px 15px;
+    }
 }
